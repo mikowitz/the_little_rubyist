@@ -1,5 +1,5 @@
 $:.unshift File.dirname(__FILE__) + "/ruby"
 
-%w{ basics }.each do |file|
+Dir["lib/ruby/**/*.rb"].each do |file|
   require file
 end
